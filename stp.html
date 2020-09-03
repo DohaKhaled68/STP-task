@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>STP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    body {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5) ), url(./background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+        }
+    img {
+  display: block;
+  margin-left:55%;
+  height: 450px;
+}
+.col
+{
+   margin-top: 60px; 
+}
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="fixed-top">
+                <div class="collapse" id="navbarToggleExternalContent">
+                  <div class="bg-dark p-4">
+                    <h5 class="text-white h4">WELCOME TO STP ORGANIZATION</h5>
+                    <span class="text-muted"> it's just a quick design.</span>
+                  </div>
+                </div>
+                <nav class="navbar navbar-dark bg-dark">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+           <!-- <input type="color" id="color" placeholder="color"> -->
+           <h5> choose the color and size of the text :</h5>
+     <select id="color">
+        <option value="black"> black </option>
+        <option value="red"> red </option>
+        <option value="green"> green </option>
+        <option value="white"> white </option>
+    </select>
+    <input type="text" id="size" placeholder="size">
+
+    <button id="btn"> Click </button>
+    <div id="print"> 
+        <br>
+        <b>
+    <h3> Vision : </h3> 
+   <p>To be a Leading organization working on developing youth who will lead positive changes.</p>
+   <h3>Mission :</h3>
+   <p> To develop youth in various fields personally and technically through academic programs, projects, and events in a values oriented system, to take our part in providing a generation capable of playing its roles effictively towards itself, community and country.</p>
+   <h3>Overview : </h3>
+   <p> STP was founded in 2006 at Cairo university; The purpose of STP is to strengthen the leadership, skills, effectiveness and efficiency of involved people; enabling them to further enrich the quality of the community and their personal life.</p>
+</b>
+</div>
+    <script>
+        $(document).ready(function () {
+
+            $('#btn').click(function () {
+
+                GetColor = document.getElementById('color').value;
+                GetSize = document.getElementById('size').value;
+
+                $('#print').css(
+                    {
+                        "color": GetColor,
+                        "font-size": GetSize + "px"
+                    }
+                )
+
+            });
+
+        });
+
+    </script>
+          </div>
+          <div class="col-8">
+            <img src="stp3.png" alt="STP logo" style="width:50%">
+          </div>
+        </div>
+      </div>
+
+
+
+
+   
+     
+</body>
+
+</html>
